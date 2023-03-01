@@ -1,0 +1,546 @@
+@charset "utf-8";
+
+body, h1, h2, h3, p, ul, li, img {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 100%;
+    font-style: normal;
+    text-align: left;
+    list-style-type: none;
+    border-collapse: collapse;
+}
+
+.covid {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 50px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    min-height: 680px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/eyecatch.jpg);
+    opacity: 0.8;
+}
+header nav.change-color {
+    background-color: rgba(0,0,0,0.9);
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition:all .5s ease;
+    box-sizing: border-box;
+}
+header nav .logo {
+    flex: 25%;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+header nav .logo img {
+    vertical-align: middle;
+}
+header nav {
+    position: relative;
+    top: 0;
+    margin: auto;
+    padding: 0 5%;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    color: white;
+}
+header nav .g_nav .menu, header nav .g_nav .menu_click1,
+header nav .g_nav .menu_click2 {
+    padding: 0 25px;
+    cursor: pointer;
+}
+header nav .g_nav .menu a {
+    text-decoration: none;
+    color: white;
+}
+header nav .g_nav {
+    flex: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 50px;
+}
+header nav .sign {
+    flex: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 50px;
+    justify-content: flex-end;
+}
+header nav .sign .signin_click {
+    cursor: pointer;
+}
+
+header nav .sp_nav {
+    position: fixed;
+    background-color: white;
+    border-radius: 8px;
+    width: 200px;
+    top: 125px;
+    right: 40px;
+    visibility: hidden;
+}
+header nav .sp_signin_click {
+    color: black;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    cursor: pointer;
+}
+header nav .sp_menu_click1, header nav .sp_menu_click2, header nav .menu {
+    color: black;
+    padding: 15px;
+    cursor: pointer;
+}
+.concept {
+    width: 90%;
+    margin: auto;
+    position: absolute;
+    top: 250px;
+    left: 5%;
+    color: white;
+    font-size: 65px;
+    line-height: 65px;
+    font-weight: bold;
+}
+
+section {
+    margin: 40px 0;
+    padding: 0 5%;
+}
+section p {
+    font-size: 15px;
+}
+.cafe_intro {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.cafe_intro .box{
+    padding: 10px 0;
+}
+.cafe_intro .info {
+    display: flex;
+    justify-content: flex-start;
+}
+.cafe_intro .photo {
+    width: 65px;
+    height: 65px;
+}
+.cafe_intro .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.cafe_intro .access {
+    padding: 5px 15px;
+}
+.access .area {
+    font-weight: bold;
+}
+
+.bg_white {
+    background-color: white;
+    color: black;
+}
+section h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+.cafe_local {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+}
+.cafe_local .box {
+    padding: 10px 0;
+}
+.cafe_local .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.cafe_local .text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.goto {
+    margin-top: 40px;
+    opacity: 0.9;
+    position: relative;
+}
+.goto_text {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: rgba(255,255,255,0.3);
+    padding: 10px;
+}
+.goto_text h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+}
+.goto_text p {
+    font-size: 18px;
+    font-weight: 100;
+    color: black;
+    margin: 0;
+}
+
+.bg_black {
+    background-color: black;
+    color: white;
+    padding: 40px 5%;
+}
+section h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+.cafe_exp {
+    margin: 15px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+}
+.cafe_exp .box {
+    padding: 10px 0;
+}
+.cafe_exp .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.cafe_exp .text {
+    font-size: 18px;
+    font-weight: bold;
+}
+.cafe_exp p {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.cafe_host {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+}
+.cafe_host .box {
+    padding: 10px 0;
+}
+.cafe_host .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.cafe_host .text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    border-top: 1px solid #ddd;
+    background-color: #f7f7f7;
+    padding: 5% 0;
+    display: block;
+}
+footer .outer {
+    width: 90%;
+    margin: auto;
+    font-size: 15px;
+}
+footer .nav_area {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+footer .inner {
+    flex: auto;
+}
+footer .inner h2 {
+    font-weight: bold;
+}
+footer .inner li {
+    margin: 15px 0;
+}
+footer .inner a {
+    color: #333;
+}
+footer .reserved {
+    padding-top: 2%;
+    border-top: 1px solid #ccc;
+    color: #333;
+}
+
+.jump {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.overlay.overlay {
+    height: 100vh;
+    width: 100%;
+    background: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.form-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 1;
+}
+.active {
+    visibility: visible;
+}
+.form {
+    width: 350px;
+    background-color: white;
+    border-radius: 8px;
+}
+.form .login {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+}
+.form .form_send {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+.form input[type="email"], .form input[type="password"], .contact input[type="password"]{
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+.form input[type="submit"], .contact_content input[type="submit"]{
+    background: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: #D70466;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+.form .sns {
+    padding: 15px;
+}
+.form .sns button {
+    background-color: white;
+    width: 100%;
+    border: 1px sold #ccc;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+.form .sns img {
+    width: 20px;
+}
+
+
+.contact {
+    width: 70%;
+    margin: 5% auto;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    margin: 5% auto;
+}
+.contact h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+.contact form {
+    margin: 3%;
+}
+.contact h3 {
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+    padding: 1%;
+    margin: 1%;
+    background-color: #eaeaea;
+    font-weight: normal;
+}
+.contact p {
+    font-weight: normal;
+    font-size: 15px;;
+}
+.contact .required {
+    color: red;
+}
+.contact input {
+    width: 100%;
+    font-size: 18px;
+    padding: 10px 3px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+}
+.contact textarea {
+    resize: none;
+    width: 100%;
+    height: 300px;
+    padding: 10px 3px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+}
+.contact_content {
+    margin: 2% 0;
+}
+.contact dt {
+    border-bottom: 1px solid #ccc;
+    margin-top: 15px;
+}
+.contact dd {
+    font-size: 18px;
+    text-align: left;
+    margin: 2px;
+}
+
+.contact .confirm_button {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.contact .confirm_button button  {
+    width: 10em;
+    line-height: 40px;
+    background-color: transparent;
+    border: 2px solid #066;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #066;
+    text-align: center;
+    font-size: 20px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.contact .confirm_button a {
+    width: 10em;
+    line-height: 40px;
+    margin-left: 10px;
+    background-color: transparent;
+    border: 2px solid #066;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #066;
+    text-align: center;
+    font-size: 20px;
+    margin: 5px;
+    text-decoration: none;
+}
+.complete_text {
+    padding: 3%;
+    font-size: 15px;
+}
+.complete_text a {
+    display: block;
+    margin-top: 10px;
+}
+
+#tableUp {
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+   
+}
+.table {
+    display: block;
+    margin: auto;
+    background-color: #fff;
+    width: 80%;
+    table-layout: fixed;
+}
+
+@media screen and (min-width: 896px) {
+    header nav .sign img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 896px) {
+    header nav .g_nav, header nav .sign .signin_click {
+        display: none;
+    }
+    header nav .sign img {
+        width: 50px;
+        cursor: pointer;
+    }
+    header nav .sign, footer .nav_area {
+        display: block;
+    }
+    .cafe_intro, .cafe_local {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .goto_text {
+        position: static;
+        top: 25;
+        left: 25;
+    }
+    footer .inner h2 {
+        border-bottom: 1px solid #ccc;
+    }
+    .contact{
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .cafe_intro {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cafe_exp {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
